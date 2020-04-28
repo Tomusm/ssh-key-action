@@ -30,9 +30,7 @@ function main(): void
 			},
 			{
 				name: "known_hosts",
-				contents: prependLf(core.getInput("known_hosts", {
-					required: true,
-				})),
+				contents: prependLf(core.getInput("known_hosts")),
 				options: {
 					mode: 0o644,
 					flag: "a",
